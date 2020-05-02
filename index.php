@@ -17,7 +17,7 @@ $registro=$base->query("SELECT * FROM client")->fetchAll(PDO::FETCH_OBJ);
         <form method="GET" action="inserirAcao.php">
                 <Input type="text" placeholder="Nome" name="nome"></Input>
 
-                <Input type="number" placeholder="Telefone" name="telefone"></Input>
+                <Input type="number" placeholder="Telefone" name="tele"></Input>
 
                 <Input type="email" placeholder="E-mail" name="email"></Input>
 
