@@ -10,9 +10,16 @@
         include"config.php";
 
         $id=$_GET["id"];
-        $base->query("DELETE FROM client WHERE idclient =".$id."");
 
-        header("Location:index.php");
+        try {
+
+            $base->query("DELETE FROM client WHERE idclient =".$id."");
+
+             header("Location:index.php");
+
+        } catch (Exception $erro) {
+            die("Erro ao tentar deletar dados: ".$erro->getMessage());
+        } 
     ?>    
 </body>
 </html>

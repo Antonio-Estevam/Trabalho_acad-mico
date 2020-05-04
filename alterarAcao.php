@@ -14,9 +14,18 @@
         $tele=$_GET["tele"];
         $email=$_GET["email"];
 
-        $base->query("UPDATE client SET nome = '".$nome."', tele = '".$tele."', email = '".$email." ' WHERE idclient = ".$id);
-    
-        header("Location:index.php");
+
+        try {
+            
+            $base->query("UPDATE client SET nome = '".$nome."', tele = '".$tele."', email = '".$email." ' WHERE idclient = ".$id);
+        
+            header("Location:index.php");
+       
+        } catch (Exception $erro) {
+
+            die("ERRO ao atualizar dados: ".$erro->getMessage());
+        }
+
     ?>    
        
 </body>
