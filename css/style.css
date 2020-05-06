@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;    
+}
+
+body{
+    font-family: Roboto, sans-serif;    
+    background-color: #6E5031;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+nav{
+    position: fixed;
+
+}
+
+.wrap-menu{
+    position: relative;
+    background-color:#603813;
+}
+ul{
+    
+    background-color:#603813;
+}
