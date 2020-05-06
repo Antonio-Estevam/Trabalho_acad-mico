@@ -9,26 +9,39 @@
     <?php
         include"config.php";
         
-        try {
+        
+        #$id=$_GET["id"];
+        $nome=$_GET["nome"];
+        $tele=$_GET["tele"];
+        $email=$_GET["email"];
+        
+        #vericifar se os dados já existe 
 
-            $id=$_GET["id"];
-            $nome=$_GET["nome"];
-            $tele=$_GET["tele"];
-            $email=$_GET["email"];
+        $registro=$base->query("select * FROM client where  nome = '".$nome."' or tele = '".$tele."' or email = '".$email."'")->fetchAll(PDO::FETCH_OBJ);
 
+        if (empty($registro)) {
+            
+            try {
 
-            #tratamento para não enviar dados repetido  
-
-
-            $base->query("INSERT INTO client (nome, tele, email) VALUES ('".$nome."', '".$tele."', '".$email."')");      
+                $base->query("INSERT INTO client (nome, tele, email) VALUES ('".$nome."', '".$tele."', '".$email."')");      
+        
+                header("Location:index.php");
     
-            header("Location:index.php");
+            } catch (Exception $erro) {
+    
+                die("ERRO ao cadastrar novos dados: ".$erro->getMessage());
+            } 
 
-        } catch (Exception $erro) {
+        }else{
+            echo ' Algum dos dados fornecido já esta cadastrado para receber novidades!';  
+        }
+        ?>  
 
-            die("ERRO ao cadastrar novos dados: ".$erro->getMessage());
-        } 
-    ?>    
+
+
+
+
+     
        
 </body>
 </html>

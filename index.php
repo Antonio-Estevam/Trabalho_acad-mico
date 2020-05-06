@@ -15,11 +15,11 @@ $registro=$base->query("SELECT * FROM client")->fetchAll(PDO::FETCH_OBJ);
     <div class="conteiner">
        <div id="form">
         <form method="GET" action="inserirAcao.php">
-                <Input type="text" placeholder="Nome" name="nome"></Input>
+                <Input type="text" placeholder="Nome" name="nome" required ></Input>
 
-                <Input type="number" placeholder="Telefone" name="tele"></Input>
+                <Input type="number" placeholder="Telefone" name="tele" required ></Input>
 
-                <Input type="email" placeholder="E-mail" name="email"></Input>
+                <Input type="email" placeholder="E-mail" name="email" required ></Input>
 
                 <input type="submit" value="Enviar">
             </form>

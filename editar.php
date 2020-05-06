@@ -20,14 +20,14 @@
             <?php
                 foreach ($registro as $clientes) :
                 ?>
-                        <Input type="hidden" name="id" value="<?php echo $clientes->idclient?>"></Input>
+                        <Input type="hidden" name="id" value="<?php echo $clientes->idclient?>" required ></Input>
                         
-                        <Input type="text" name="nome" value="<?php echo $clientes->nome ?>"></Input>
+                        <Input type="text" name="nome" value="<?php echo $clientes->nome ?>" required ></Input>
 
                         <?php  $teleConversion = intval($clientes->tele )  ?>
-                        <Input type="number" name="tele" value="<?php echo $teleConversion ?>"  name="telefone"></Input>
+                        <Input type="number" name="tele" value="<?php echo $teleConversion ?>"  name="telefone" required ></Input>
 
-                        <Input type="email" name="email" value="<?php echo $clientes->email?>"  name="email"></Input>
+                        <Input type="email" name="email" value="<?php echo $clientes->email?>"  name="email" required ></Input>
 
                         
                         <input type="submit" value="Atualizar"> </Input>

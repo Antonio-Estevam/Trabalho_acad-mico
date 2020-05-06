@@ -18,7 +18,6 @@
         try {
             
             $base->query("UPDATE client SET nome = '".$nome."', tele = '".$tele."', email = '".$email." ' WHERE idclient = ".$id);
-        
             header("Location:index.php");
        
         } catch (Exception $erro) {
