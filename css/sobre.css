@@ -1,8 +1,63 @@
 .sobre{
     width:100%;
-    height:100vh;
     background-color: #A5CFEB;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;    
+    background-position: center;   
+}
+
+
+.nuvem{
+    display: flex;
+    flex-direction: column;
+    padding-top:100px;
+}
+
+.nuvem #nuvem1{
+    width:25%; 
+    max-width:100px;
+    opacity:0.4;    
+    margin-left:5%;
+}
+.nuvem #nuvem2{
+    width:50%; 
+    max-width:200px;
+    opacity:0.9;    
+    margin-left:45%;
+
+}
+
+.bloco-pesonagem{
+    display: flex;
+    flex-direction: column;
+    padding-top:0px;
+}
+
+
+.bloco-pesonagem #plataforma-pequena{
+    width:17%; 
+}
+.bloco-pesonagem div{
+    display: flex;
+    flex-direction: row;
+}
+.bloco-pesonagem div p{
+    width: 50%;
+    padding: 30px 10px 30px 40px;
+    float: left;
+    text-align: left;
+    color: #381d04;
+}
+
+.bloco-pesonagem #personagem-sobre{
+    width:20%;
+    max-width: 110px;
+    max-height: 155px;
+    min-width: 100px;
+    margin-left: 10px;
+    padding-top: 155px;
+}
+
+.bloco-pesonagem #personagem-plataforma{
+    width:50%; 
 }

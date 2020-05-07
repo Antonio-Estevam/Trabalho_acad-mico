@@ -5,8 +5,8 @@
 }
 
 body{
-    font-family: Roboto, sans-serif;    
-    background-color: #6E5031;
+    font-family: Roboto, sans-serif;
+    background-color: #A5CFEB;
 }
 
 ul,ol,li{
@@ -18,11 +18,10 @@ nav{
 
 }
 
-.wrap-menu{
-    position: relative;
-    background-color:#603813;
-}
 ul{
     
-    background-color:#603813;
+    background-color:rgba(0, 0, 0, 0.653);    
+}
+ul li {
+    text-align: center;    
 }
