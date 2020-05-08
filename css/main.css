@@ -106,3 +106,64 @@
     /*background-color: rgba(255, 255, 255, 0.3);*/
 }
 
+
+
+
+    /*1200px desktop*/
+        @media  (min-width:1200px){
+        
+    }  
+    /*1200px desktop*/
+        @media  (min-width:1024px){
+            .bt_download{                
+                padding-top: 290px;
+
+            }
+
+            .btnMenu_open,.btnMenu_close{
+                background-image: url("/img/btn_menu_branco.svg");    
+                margin-top: 20px;
+                margin-left: 10px;
+            
+              
+            }
+        
+    }  
+
+    /*960px tabletes no modo paisagem  */  
+        @media  (min-width:960px){
+            .btnMenu{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            }
+
+            .bt_download a {
+                font-size: 50px;
+                padding: 40px;
+                border-radius:25px;
+            }
+            .personagem1{                
+                width: 200px;
+            }
+            .Personagem2{
+                width: 150px;
+            }
+
+            .menu-item-action{
+                font-size: 24px;
+            }
+
+
+        } 
+    
+    /*768px tabletes no modo retrato */   
+       @media  (min-width:768px){
+        
+        }
+
+    /* 480px smartphone no modo paisagem */
+
+        @media  (min-width:480px){
+        
+        }

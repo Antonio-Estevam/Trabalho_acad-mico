@@ -10,3 +10,43 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
+
+
+
+    /*1200px desktop*/
+    @media  (min-width:1200px){
+        
+    }  
+    /*1200px desktop*/
+        @media  (min-width:1024px){
+            
+        
+    }  
+
+    /*960px tabletes no modo paisagem  */  
+        @media  (min-width:960px){
+            
+
+        } 
+    
+    /*768px tabletes no modo retrato */   
+       @media  (min-width:768px){
+        footer{margin-top: 150px;}
+        }
+
+    /* 480px smartphone no modo paisagem */
+
+        @media  (min-width:480px){
+        
+        }
+
+
+
+
+
+
+
+
+
+
+

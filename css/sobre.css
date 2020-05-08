@@ -36,6 +36,8 @@
 
 .bloco-pesonagem #plataforma-pequena{
     width:17%; 
+    max-width: 130px;
+    max-height: 103px;
 }
 .bloco-pesonagem div{
     display: flex;
@@ -52,5 +54,40 @@
 
 
 .bloco-pesonagem #personagem-plataforma{
-    width:50%; 
+    width:50%;
+    max-width: 384px;
+    max-height: 122px;
+
 }
+
+
+ /*1200px desktop*/
+ @media  (min-width:1200px){
+
+  .bloco-pesonagem div p {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        font-size: 30px;
+    }
+
+        
+}  
+
+/*960px tabletes no modo paisagem  */  
+    @media  (min-width:960px){
+    
+    } 
+
+/*768px tabletes no modo retrato */   
+   @media  (min-width:768px){
+    .bloco-pesonagem div p {
+        font-size: 25px;
+    }
+    
+    }
+
+/* 480px smartphone no modo paisagem */
+
+    @media  (min-width:480px){
+    
+    }

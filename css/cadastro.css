@@ -54,3 +54,42 @@
     margin-top: 15px;
 
 }
+
+
+    /*1200px desktop*/
+    @media  (min-width:1200px){
+        
+    }  
+
+    /*960px tabletes no modo paisagem  */  
+        @media  (min-width:960px){
+        
+        } 
+    
+    /*768px tabletes no modo retrato */   
+       @media  (min-width:768px){
+        .cadastro form{
+            flex-direction: column;
+        }
+        .cadastro form p{
+            font-size: 25px;
+        }
+
+        .cadastro form div{  
+            display: flex;
+            flex-direction: row;
+        }
+
+        .cadastro form input{    
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 0px;
+        }
+        
+        }
+
+    /* 480px smartphone no modo paisagem */
+
+        @media  (min-width:480px){
+        
+        }
