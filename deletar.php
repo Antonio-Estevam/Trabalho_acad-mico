@@ -15,7 +15,7 @@
 
             $base->query("DELETE FROM client WHERE idclient =".$id."");
 
-             header("Location:index.php");
+             header("Location:admin.php");
 
         } catch (Exception $erro) {
             die("Erro ao tentar deletar dados: ".$erro->getMessage());
