@@ -2,18 +2,29 @@
 body{
     font-family: Roboto, sans-serif;
     background-color: #A5CFEB;
+    margin: 0px;
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
 }
 
-
-.cadastro{
-    width:100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;   
+.cadastro .nuvem #nuvem1{
+    height: 5vh;
+    margin-left: 5%;
+    margin-right: 15%;
+    opacity: 0.5;
+}
+.cadastro #nuvem2{
+    margin-top: 10px;
+    height: 10vh;
+    margin-left: 5%;
+    opacity: 0.7;
 }
 
 .cadastro form{
-    margin-left: 5%;
+    position: absolute;
+    top:30vh;
+    left: 5%;
     display: flex;  
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.081);
@@ -35,8 +46,9 @@ body{
 
 }
 
-.cadastro form input{    
-    width:90%;
+.cadastro form input{   
+    margin-left: 2%; 
+    width:91%;
     text-align: center;
     font-size: 18px;
     margin-top: 10px;
@@ -59,7 +71,25 @@ body{
     color: #fff;
     padding: 10px 6px;
     margin-top: 15px;
+}
 
+.cadastro form a {
+    text-decoration: none;
+    margin-top:10px;
+    color: #603813;
+}
+
+footer{
+    width: 100%;
+    height:9vh;
+    margin-top: 74vh;
+    padding-top: 7vh;
+    background-color: #6E5031;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 

@@ -20,7 +20,8 @@ nav{
 
 ul{
     
-    background-color:rgba(0, 0, 0, 0.653);    
+    background-color:rgba(0, 0, 0, 0.653); 
+    height: 100vh;   
 }
 ul li {
     text-align: center;    
