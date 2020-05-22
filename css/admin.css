@@ -1,0 +1,126 @@
+
+body{
+    font-family: Roboto, sans-serif;
+    background-color: #A5CFEB;
+    margin: 0px;
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+}
+table, tr, td {
+border: 0px; 
+}
+a{
+    text-decoration: none;
+}
+#resultado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+#resultado table{
+    margin-top:100px;
+    margin-bottom: 100px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.558);
+    -webkit-box-shadow: 0px 0px 109px -48px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 109px -48px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 109px -48px rgba(0,0,0,0.75);
+}
+
+#resultado table .primeiroTr {
+    background-color:#0A3EEA;
+    font-size:16px;
+    padding-left:5px;
+    color: #fff;
+}
+
+#resultado table td p{
+   font-size: 12px;
+   color: rgb(49, 49, 49);
+}
+
+#resultado table td a input{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+
+}
+
+#resultado table td img{
+    height:15px;
+}
+
+#resultado table tbody tr:nth-child(2n){
+    background-color: rgba(211, 211, 211, 0.558);
+}
+
+#resultado table tbody tr td:nth-child(1){ width:10%;}
+#resultado table tbody tr td:nth-child(2){ width:22%;}
+#resultado table tbody tr td:nth-child(3){ width:18%;}
+#resultado table tbody tr td:nth-child(4){ width:24%;}
+#resultado table tbody tr td:nth-child(5){ width:16%;}
+
+.manu{
+    height:5vh;
+    max-height:60px;
+    width: 100%;
+    background-color: red;
+}
+.manu label{
+    font-size: 12px;
+     width:60px;
+}
+
+.conteiner #form form {
+   display: flex;
+   flex-direction: column;
+
+}
+.conteiner #form form input{  
+   margin-top: 5px;
+   margin-left: 2%; 
+   width:91%;
+   text-align: left;
+   padding-left: 100px;
+   font-size: 16px;
+   border: #4f2905 solid 1px;
+   padding: 2px;
+   background-color: rgba(255, 255, 255, 0);
+   color: #542d08d7;
+}
+.conteiner #form form  input[type=submit]{
+  background-color:#4f2905;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.conteiner #form form input::placeholder{
+    color: rgba(0, 0, 0, 0.428);
+}  
+
+
+    /*1200px desktop*/
+    @media  (min-width:1200px){
+        
+    }  
+
+    /*960px tabletes no modo paisagem  */  
+        @media  (min-width:960px){
+        
+        } 
+    
+    /*768px tabletes no modo retrato */   
+       @media  (min-width:768px){
+       
+        }
+
+    /* 480px smartphone no modo paisagem */
+
+        @media  (min-width:480px){
+        
+        }

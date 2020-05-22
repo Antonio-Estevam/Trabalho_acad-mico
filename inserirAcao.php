@@ -25,7 +25,7 @@
 
                 $base->query("INSERT INTO client (nome, tele, email) VALUES ('".$nome."', '".$tele."', '".$email."')");      
         
-                header("Location:index.php");
+                header("Location:admin.php");
     
             } catch (Exception $erro) {
     
