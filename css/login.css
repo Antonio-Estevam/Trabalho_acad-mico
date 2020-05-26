@@ -5,43 +5,49 @@ body{
     margin: 0px;
     width: 100%;
     height:100vh;
-    overflow: hidden;
 }
 
 .cadastro .nuvem #nuvem1{
     height: 5vh;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-right: 15%;
+    margin-top: 5vh;
     opacity: 0.5;
 }
-.cadastro #nuvem2{
-    margin-top: 10px;
-    height: 10vh;
-    margin-left: 5%;
+ #nuvem2{
+    margin-top: 60px;
+    margin-right:2%;
+    margin-left: 83%;
+    width:15%;
+    margin-right: 0px;
     opacity: 0.7;
 }
 
 .cadastro form{
-    position: absolute;
-    top:30vh;
+    position: relative;
     left: 5%;
     display: flex;  
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.081);
+    background-color: rgba(255, 255, 255, 0.204);
     width:90%;
     align-items: center;
     -webkit-box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.68);
     -moz-box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.68);
     box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.68);
-    border-radius: 15px;
+    border-radius: 10px;
     padding-bottom: 35px;
+    margin-top: 15vh;
 }
 
+.cadastro form div{  
+    display: flex;
+    flex-direction: column;
+}
 .cadastro form p {
     text-align: center;
     font-size:18px;
     padding: 35px 10px 15px 10px;
-    color: #381d04;
+    color: #0A3EEA;
 
 
 }
@@ -52,38 +58,44 @@ body{
     text-align: center;
     font-size: 18px;
     margin-top: 10px;
-    border: #60381379 solid 1px;
+    border: #0A3EEA solid 1px;
     border-radius: 5px;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0);
-    color: #4f2905;
+    color: #0A3EEA;
 }
 
 .cadastro form input::placeholder{ 
-    color: #4f2905;
+    color: #0A3EEA;
 }
 
 
 .cadastro form input[type="submit"] {
-    width:40%;
+    width:fit-content;
     font-weight: bolder;
-    background-color: #4f2905;
+    background-color: rgb(61, 95, 206);
     color: #fff;
     padding: 10px 6px;
     margin-top: 15px;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    
 }
 
 .cadastro form a {
     text-decoration: none;
     margin-top:10px;
-    color: #603813;
+    color: #0A3EEA;
 }
 
 footer{
+    position: fixed;
+    bottom: 0px;
     width: 100%;
     height:9vh;
-    margin-top: 74vh;
-    padding-top: 7vh;
     background-color: #6E5031;
     color: #fff;
     align-items: center;
@@ -106,21 +118,14 @@ footer{
     /*768px tabletes no modo retrato */   
        @media  (min-width:768px){
         .cadastro form{
-            flex-direction: column;
         }
         .cadastro form p{
             font-size: 25px;
         }
 
-        .cadastro form div{  
-            display: flex;
-            flex-direction: row;
-        }
+       
 
-        .cadastro form input{    
-            margin-left: 10px;
-            margin-right: 10px;
-            border-radius: 0px;
+        .cadastro form input{
         }
         
         }

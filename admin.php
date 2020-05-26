@@ -21,14 +21,20 @@
 
     ?>
 
-    <nav class="manu">
-        <label ><?php echo "Olá " . $_SESSION["usuario"] . " tudo bem?"; ?></label>
+    <nav class="menu">
+        <label ><?php echo "Olá <strong>" . $_SESSION["usuario"] . "</strong> tudo bem?"; ?></label>
         <input type="button" value="Sair">
     </nav>
 
     <div class="conteiner">   
         <div id="resultado">
             <table>
+                <tr>
+                    <td colspan=”5″ id="agrup">                            
+                        <input type="text" name="busca">
+                        <input type="button" value="Pesquisar"> 
+                    </td>
+                </tr>
                 <tr class="primeiroTr">
                     <td>Id:</td>
                     <td>Nome</td>
@@ -71,19 +77,24 @@
             </table>
         </div>
 
-        <hr>    
-          <h2>Adicionar novo contato</h2>
-        <div id="form">
-        <form method="GET" action="inserirAcao.php">
-                <Input type="text" placeholder="Nome" name="nome" required ></Input>
-
-                <Input type="number" placeholder="Telefone" name="tele" required ></Input>
-
-                <Input type="email" placeholder="E-mail" name="email" required ></Input>
-
-                <input type="submit" value="Enviar">
-            </form>
-       </div>
+        <hr> 
+        <div id="novo">
+            <div id="form">
+                <h2>Adicionar novo contato</h2>
+                <center>
+                    <form method="GET" action="inserirAcao.php">
+                        <Input type="text" placeholder="Nome" name="nome" required ></Input>
+    
+                        <Input type="number" placeholder="Telefone" name="tele" required ></Input>
+    
+                        <Input type="email" placeholder="E-mail" name="email" required ></Input>
+    
+                        <input type="submit" value="Enviar">
+                    </form>
+                </center>    
+           </div>
+        </div>   
+        
 
     </div>
 </body>
