@@ -22,19 +22,19 @@
     ?>
 
     <nav class="menu">
-        <label ><?php echo "Olá <strong>" . $_SESSION["usuario"] . "</strong> tudo bem?"; ?></label>
+        <label ><?php echo "Olá " . $_SESSION["usuario"] . " tudo bem?"; ?></label>
         <input type="button" value="Sair">
     </nav>
 
     <div class="conteiner">   
         <div id="resultado">
             <table>
-                <tr>
+                <!--tr>
                     <td colspan=”5″ id="agrup">                            
                         <input type="text" name="busca">
                         <input type="button" value="Pesquisar"> 
                     </td>
-                </tr>
+                </tr-->
                 <tr class="primeiroTr">
                     <td>Id:</td>
                     <td>Nome</td>
@@ -67,7 +67,7 @@
                 <?php
                     endforeach;
 
-                }else{
+               }else{
                     echo"Você precisa estar logado para acessar a pagina admin.";
                 }
                 ?>

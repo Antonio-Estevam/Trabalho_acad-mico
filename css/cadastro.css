@@ -23,11 +23,14 @@
     text-align: center;
     font-size:18px;
     padding: 35px 10px 15px 10px;
-    color: #381d04;
+    color: #4f2905;
 
 
 }
-
+.cadastro form .dvForm{
+    display: flex;
+    flex-direction: column;
+}
 .cadastro form input{    
     width:90%;
     text-align: center;
@@ -41,7 +44,7 @@
 }
 
 .cadastro form input::placeholder{ 
-    color: #4f2905;
+    color: #4f2905ba;
 }
 
 
@@ -50,8 +53,9 @@
     font-weight: bolder;
     background-color: #4f2905;
     color: #fff;
-    padding: 10px 6px;
+    padding: 5px 3px;
     margin-top: 15px;
+    max-width: 200px;
 
 }
 
@@ -75,16 +79,31 @@
             font-size: 25px;
         }
 
-        .cadastro form div{  
+        .cadastro form .dvForm{
             display: flex;
             flex-direction: row;
         }
 
         .cadastro form input{    
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
             border-radius: 0px;
+            border: none;
+            background-color: #4f290566;
+            color: rgb(255, 254, 254);
         }
+
+        .cadastro form input::placeholder{    
+            color: rgb(202, 202, 202);
+            border-radius: 10px;
+        }
+
+        .cadastro form input[type="submit"] {
+            border-radius: 30px;
+        
+        }
+
+        
         
         }
 
