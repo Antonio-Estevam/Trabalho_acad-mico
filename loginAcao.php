@@ -18,8 +18,9 @@ if($registro){
     endforeach;
 
 }else {
-    echo "Erro";
-    /*header("Location:login.html"); */   
+    header("Location:erroAlerta.php");
+     $_POST['field1'] = "ollllll";
+
  }
 ?>
 

@@ -33,7 +33,8 @@
             } 
 
         }else{
-            echo ' Algum dos dados fornecido já esta cadastrado para receber novidades!';  
+            header("Location:erroAlerta.php");
+           # echo ' Algum dos dados fornecido já esta cadastrado para receber novidades!';  
         }
         ?>  
 
