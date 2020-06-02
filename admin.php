@@ -23,7 +23,7 @@
 
     <nav class="menu">
         <label ><?php echo "Olá " . $_SESSION["usuario"] . " tudo bem?"; ?></label>
-        <input type="button" value="Sair">
+        <input type="button" value="Sair" action="login.html" >
     </nav>
 
     <div class="conteiner">   

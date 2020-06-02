@@ -75,8 +75,8 @@
 }
 
 
-.bt_download{    
-    padding-top: 35vh;
+.bt_download{   
+    padding-top: 10vh;
     width: 100%;
     display: flex; 
     justify-content: center;
@@ -87,8 +87,8 @@
     color: #ffffff;
     background-color: #0A3EEA;
     text-decoration:none;
-    padding: 20px 15px;
-    font-size: 30px;    
+    padding: 10px 5px;
+    font-size: 16px;    
     font-weight: bolder;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 44px -6px rgba(0,0,0,0.25);
@@ -101,9 +101,55 @@
 .personagens{
     display: flex; 
     justify-content: center;
-    padding-top:160px;    
-    padding-bottom: 150px;
+    margin-top:25vh;
+    padding-bottom:5vh;
+
+    
 }
+.personagens img{
+    width: 90%;
+    max-width: 700px;
+    
+    -webkit-box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 22px -11px rgba(0, 0, 0, 0.877);
+}
+
+
+#descriTxt{
+  padding-bottom: 5vh;  
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+}
+#descriTxt p{
+    font-size: 25px;
+    color: #5e2416;
+    font-family: 'Bangers', cursive;
+  
+  }
+  #descriTxt a{      
+      text-decoration: none;
+      background-color: #5e2416;
+      color: #fff;
+      padding: 10px 10px;
+      text-align: center;
+      width: max-content;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      font-weight: bolder;
+      box-shadow: 0px 0px 28px 3px rgba(0,0,0,0.2);
+      
+  }
+
+  #descriTxt a:hover{
+    background-color: #037422;
+  }  
 
 .filter {
     -webkit-backdrop-filter: blur(10px); /* Safari 9+ */

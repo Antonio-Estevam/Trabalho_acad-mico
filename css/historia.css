@@ -1,10 +1,58 @@
 .historia{
     margin-top: -5px;
     width:100%;
-    height:100vh;
-    background: linear-gradient(0deg, rgba(165,207,235,1) 10%, rgba(110,80,49,1) 65%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+    background-color:rgb(163, 206, 235);
+    background: rgb(165,207,235);
+    background: linear-gradient(0deg, rgba(165,207,235,1) 0%, rgba(255,255,255,1) 11%, rgba(255,255,255,1) 86%, rgba(165,207,235,1) 100%);
+ 
+}
+
+#imgJogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+#imgJogo img{
+    width:80%;
+    margin-top: 15px;
+}
+
+#historTxt p{
+    padding-top: 30px;
+    color: #5e2416;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+/*768px tabletes no modo retrato */   
+@media  (min-width:768px){
+
+#historTxt{}
+#imgJogo{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgJogo img{
+    width:40%;
+    max-width: 500px;
+    margin-left: 10px;
+}
+
+#historTxt p{
+ 
+}
 }
