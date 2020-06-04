@@ -100,8 +100,8 @@
 
 .personagens{
     display: flex; 
-    justify-content: center;
-    margin-top:25vh;
+    justify-content: center;    
+    margin-top: 15vh;
     padding-bottom:5vh;
 
     
@@ -126,9 +126,9 @@
 
 }
 #descriTxt p{
-    font-size: 25px;
+    font-size: 15px;
     color: #5e2416;
-    font-family: 'Bangers', cursive;
+    font-family: 'Poppins', sans-serif;
   
   }
   #descriTxt a{      
