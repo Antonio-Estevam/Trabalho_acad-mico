@@ -22,8 +22,9 @@
 .cadastro form p {
     text-align: center;
     font-size:18px;
-    padding: 35px 10px 15px 10px;
-    color: #4f2905;
+    padding: 35px 10px 15px 10px;    
+    font-family: Ubuntu; 
+    color: #5e2416;
 
 
 }

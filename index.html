@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pandemic</title>
+    <title>Pandemic Adventure</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/historia.css">
@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -44,9 +45,6 @@
             </nav>
      </div>    
 
-        <!--div class="bt_download" id="bt_download"> 
-                <a href="#"> Baixar agora</a>
-        </div-->
 
         <div class="personagens" id="personagens">
             <img src="img/mold.jpg" alt="Personagem1">
@@ -60,7 +58,7 @@
                   Renato conseguirá lutar contra essa ameaça microscópica e pôr um fim na Pandemia?
             </p>
 
-            <a href="#">BAIXAR AGORA</a>
+            <a href="#" id="baixar">BAIXAR AGORA</a>
         </div>
 
     </section>
@@ -93,20 +91,36 @@
         </div>
 
         <div class="bloco-pesonagem">
-            <img src="img/plataforma pequena.svg" alt="Nuvem" id="plataforma-pequena">
-             <div>
+            <img src="img/plataforma pequena.svg" alt="Nuvem" id="plataforma-pequena" />
+            <div id="txtSobre">
+
+                <div id="imgSobre">
+                    <!--img src="./img/pesonagem.png" alt="" id="#personagemDr"-->
+                    <img src="./img/logo.png" alt="Pandemic Adventure" id="logoSobre">
+                </div>
+
+                <h2> Projeto com a finalidade de desenvolver jogo e um site com tema do mesmo jogo usando conhecimentos adquirido durante graduação. </h2>
+                <p class="escuro">Componentes do grupo:</p>
                 
-                <p> 
-                     Aqui terão os nomes dos Alunos do que formam o grpo... 
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis 
-                    nisl ut aliquip ex ea commodo consequat.
-                </p>
-             </div>
+                <div id="centralizar"> 
+                    <p class="claro">
+                        Antonio Estevam da Silva Filho  <br />
+                        Evaristo Fernandes Neto  <br />
+                        Edson Crispim   <br />
+                        Davi Cauno dos Santos <br />
+                    </p>
+                    <p class="claro" id="aluno2">Amauri Vieira Barbosa  <br />
+                        Matheus Francisco   <br />
+                        Naason Rodrigues Melo Júnior   <br />
+                        Diego Oliveira    <br />
+                    </p>
+                </div>
+                <p class="escuro">Orientação do Projeto:</p>
+                <p class="claro" id="pro">Gerson Risso.</p>
+                
+            </div>
             
-            <img src="img/personagem-plataforma.svg" alt="Nuvem" id="personagem-plataforma">
+            <img src="img/personagem-plataforma.svg" alt="Nuvem" id="personagem-plataforma" />
         </div>
 
     </section>
@@ -120,9 +134,8 @@
 
             <p>
                 Quer receber as novidades sobre o JOGO  ?<br>
-                Cadastre-se Agora !<br>
-                Você receberá todas as novidades e  
-                atualizções exclusivos no seu E-mail!
+                Cadastre-se Agora!
+                Você receberá todas novidades e atualizações exclusivas no seu E-mail!
             </p>
             <div class="dvForm">
                 <Input type="text" placeholder="Nome" name="nome" required ></Input>

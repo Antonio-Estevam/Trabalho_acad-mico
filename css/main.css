@@ -122,14 +122,13 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
 
 }
 #descriTxt p{
-    font-size: 15px;
+    font-size: 14px;  
     color: #5e2416;
-    font-family: 'Poppins', sans-serif;
-  
+    font-family: Ubuntu;  
   }
   #descriTxt a{      
       text-decoration: none;
@@ -166,13 +165,6 @@
     }  
     /*1200px desktop*/
         @media  (min-width:1024px){
-            
-           /* .btnMenu {
-                padding-top: 40px;
-                padding-bottom: 40px;
-                padding-left: 20px;
-                display: none;
-            }*/
 
             .bt_download{                
                 padding-top: 290px;
@@ -219,6 +211,10 @@
     
     /*768px tabletes no modo retrato */   
        @media  (min-width:768px){
+        #descriTxt p{            
+            font-size: 20px; 
+            text-align: center;
+         }
         
         }
 

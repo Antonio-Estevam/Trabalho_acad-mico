@@ -1,0 +1,44 @@
+***codigo do config.php***
+
+<?php
+
+try {
+    $base= new PDO("mysql:host=localhost;dbname=u391989280_crudjogo","u391989280_root","navy1995");
+
+    $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    $base->exec("SET CHARACTER SET utf8");
+
+} catch (Exception $erro) {
+   die("ERRO: ".$erro->getMessage());
+}
+
+
+
+***codigo do loginAcao.php***
+
+
+<?php
+include("config.php");
+
+ $email = $_POST["email"];
+ $senha = $_POST["senha"];
+
+$registro=$base->query("SELECT nome FROM u391989280_crudjogo.admin where email ='".$email."' and senha = '".$senha ."'")->fetchAll(PDO::FETCH_OBJ);
+if($registro){
+    foreach ($registro as $user) :
+        #criando sessão
+        session_start();
+        $_SESSION["usuario"] = $user-> nome ;
+
+        header("Location:admin.php");  
+        
+
+
+    endforeach;
+
+}else {
+    echo "Erro";
+    /*header("Location:login.html"); */   
+ }
+?>

@@ -9,21 +9,16 @@
 <body>
 
     <?php
-
         session_start();
 
         if($_SESSION){
-
-            include("config.php");
-            
-
+            include("config.php"); 
         $registro=$base->query("SELECT * FROM client")->fetchAll(PDO::FETCH_OBJ);
-
     ?>
 
     <nav class="menu">
         <label ><?php echo "Olá " . $_SESSION["usuario"] . " tudo bem?"; ?></label>
-        <input type="button" value="Sair" action="login.html" >
+        <input type="button" value="Sair" id="sair" >
     </nav>
 
     <div class="conteiner">   
@@ -95,7 +90,7 @@
            </div>
         </div>   
         
-
+        <script type="text/javascript" src="javaScript/script2.js"> </script> 
     </div>
 </body>
 </html>

@@ -39,21 +39,6 @@
     max-width: 130px;
     max-height: 103px;
 }
-.bloco-pesonagem div{
-    display: flex;
-    justify-content: center;
-}
-.bloco-pesonagem div p{
-    width: 70%;
-    padding: 100px 0px 100px 0px;
-    float: left;
-    text-align: initial;
-    font-size: 18px;
-    color: #5e2416;    
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
-
 
 .bloco-pesonagem #personagem-plataforma{
     width:50%;
@@ -61,16 +46,79 @@
     max-height: 122px;
 
 }
+#imgSobre{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#imgSobre #logoSobre{
+    width: 100%;
+    max-width:320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#txtSobre{
+    padding:30px 0px 30px 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    /*background-color: rgba(255, 255, 255, 0.081);
+    -webkit-box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.68);*/
+    border-radius: 15px;
+    justify-content: center;
+}
+
+#txtSobre h2{
+    font-size: 20px;  
+    color: #5e2416;
+    font-family: Ubuntu; 
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#txtSobre .escuro{
+    font-size: 18px;  
+    color: #5e2416;
+    font-family: Ubuntu; 
+    text-align: center;
+
+
+}
+#txtSobre #centralizar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#txtSobre #centralizar #aluno2{
+    margin-left: 0px;
+    justify-content: center;
+}
+
+#txtSobre .claro{
+    font-size: 16px;  
+    color: #966431;
+    font-family: Ubuntu;     
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+#txtSobre #pro{
+    text-align: center;
+}
 
 
  /*1200px desktop*/
  @media  (min-width:1200px){
 
-  .bloco-pesonagem div p {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        font-size: 30px;
-    }
 
         
 }  
@@ -82,9 +130,38 @@
 
 /*768px tabletes no modo retrato */   
    @media  (min-width:768px){
-    .bloco-pesonagem div p {
-        font-size: 25px;
-    }
+
+        #txtSobre{
+            max-width: 800px;
+        }
+        #txtSobre h2{
+            font-size: 20px;  
+            
+        }
+
+        #txtSobre .escuro{
+            font-size: 18px;            
+            justify-content: center;
+
+        }
+        #txtSobre #centralizar{
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+            /*margin-left:20px;*/
+
+            
+        }
+        #txtSobre #centralizar #aluno2{
+            margin-left: 20px;
+        }
+
+        #txtSobre .claro{
+            font-size: 16px; 
+        }
+        #txtSobre #pro{
+            margin-left: 20px;
+        }
     
     }
 
